@@ -13,14 +13,14 @@ const links: Array<{
   alt: string;
 }> = [
   {
-    githubHref:
-      'https://github.com/jonathan-nadeau/Social-media-dashboard-with-theme-switcher',
+    githubHref: 'https://github.com/jonathan-nadeau/pw2_projetfinal_partie2',
     href: 'https://firebase-auth.jonathan-nadeau.ca/signup',
     src: firebaseAuththumbnail,
     alt: 'Firebase authentification app',
   },
   {
-    githubHref: 'https://github.com/jonathan-nadeau/pw2_projetfinal_partie2',
+    githubHref:
+      'https://github.com/jonathan-nadeau/Social-media-dashboard-with-theme-switcher',
     href: 'https://social-media-dashboard.jonathan-nadeau.ca/',
     src: socialMediaDashboardThumbnail,
     alt: 'Social media dashboad app',
