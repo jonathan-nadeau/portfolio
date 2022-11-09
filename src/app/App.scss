@@ -1,0 +1,41 @@
+@import '../sass/colors';
+@import '../sass/breakpoints';
+
+.App {
+  background-color: $dark;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: $light;
+  scroll-behavior: smooth;
+  letter-spacing: 0.15rem;
+  line-height: 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 0.6rem;
+}
+
+section,
+footer {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  border-top: 2px solid $secondary;
+}
+
+footer {
+  border: 0;
+}
+
+@media screen and (min-width: $large) {
+  .container {
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (min-width: $xLarge) {
+  .container {
+    padding: 0 6rem;
+  }
+}

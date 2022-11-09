@@ -1,0 +1,46 @@
+@import '../../../sass/colors';
+@import '../../../sass/fontsRule';
+
+.ImageLink {
+  width: 275px;
+  cursor: pointer;
+  position: relative;
+  @include boxShadow;
+
+  &__links {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba($dark, 0);
+    transition: background-color 300ms ease-in-out;
+
+    a {
+      display: none;
+      align-items: center;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+
+      svg {
+        margin-right: 1rem;
+      }
+    }
+  }
+
+  &:hover &__links,
+  &:focus &__links {
+    background-color: rgba($dark, 0.8);
+
+    a {
+      display: flex;
+    }
+  }
+}

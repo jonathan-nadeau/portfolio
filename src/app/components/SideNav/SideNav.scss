@@ -1,0 +1,49 @@
+@import '../../../sass/colors';
+
+.MuiDrawer-paperAnchorRight {
+  background-color: $dark !important;
+  color: $light !important;
+  font-family: 'Roboto', sans-serif;
+  width: 100%;
+  font-weight: 300;
+  padding: 3rem;
+
+  .closeButton {
+    color: $light;
+    width: fit-content;
+    margin-left: auto;
+
+    &:hover,
+    &:focus {
+      color: $primary;
+    }
+  }
+
+  .navItems {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    letter-spacing: 0.2rem;
+
+    .navItem {
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+
+  .socialMedias {
+    display: flex;
+    button {
+      color: $secondary;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+}

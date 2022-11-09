@@ -1,0 +1,41 @@
+@import '../../sass/colors';
+@import '../../sass/breakpoints';
+@import '../../sass/fontsRule';
+
+footer {
+  border-top: 2px solid $secondary !important;
+
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .sections,
+  .links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+
+    a {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $large) {
+  footer {
+    .container {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+}

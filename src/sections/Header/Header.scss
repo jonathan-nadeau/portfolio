@@ -1,0 +1,57 @@
+@import '../../sass/colors';
+@import '../../sass/breakpoints';
+@import '../../sass/fontsRule';
+
+.Header {
+  height: 100vh;
+  background-color: inherit;
+  padding-top: 72px;
+  display: flex;
+  align-items: center;
+
+  &__content {
+    width: 100%;
+
+    div,
+    h2 {
+      font-weight: 500;
+      font-size: 1.5rem;
+      margin: 1.5rem 0;
+      text-align: center;
+      @include fontShadow;
+    }
+
+    .first {
+      color: $primary;
+    }
+
+    .middle {
+      font-size: 2rem;
+    }
+
+    .last {
+      color: $primary;
+    }
+  }
+}
+
+@media screen and (min-width: $medium) {
+  .Header {
+    .middle {
+      font-size: 3rem;
+    }
+  }
+}
+
+@media screen and (min-width: $xLarge) {
+  .Header {
+    div,
+    h2 {
+      text-align: start;
+    }
+
+    .middle {
+      font-size: 4.5rem;
+    }
+  }
+}

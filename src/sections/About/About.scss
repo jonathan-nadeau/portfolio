@@ -1,0 +1,73 @@
+@import '../../sass/fontsRule';
+@import '../../sass/colors';
+@import '../../sass/breakpoints';
+
+#about {
+  .aboutMe {
+    margin-bottom: 2rem;
+  }
+
+  h2 {
+    @include sectionTitle;
+  }
+
+  p {
+    width: 90%;
+    margin: 0 auto 1rem;
+    text-align: center;
+
+    span {
+      color: $primary;
+    }
+  }
+
+  li {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+    padding: 1rem 0;
+    border-bottom: 1px solid $secondary;
+  }
+}
+
+@media screen and (min-width: $large) {
+  #about {
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    li {
+      width: 45%;
+    }
+  }
+}
+
+@media screen and (min-width: $xLarge) {
+  #about {
+    p {
+      width: 50%;
+      margin: 0;
+      margin-bottom: 2rem;
+      font-size: 1.3rem;
+    }
+
+    .first {
+      text-align: start;
+      margin-right: auto;
+    }
+
+    .middle {
+      margin: 0 auto 2rem;
+    }
+
+    .last {
+      margin-left: auto;
+      text-align: end;
+    }
+
+    ul {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

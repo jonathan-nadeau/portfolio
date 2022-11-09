@@ -1,0 +1,78 @@
+@import '../../../sass/colors';
+@import '../../../sass/breakpoints';
+@import '../../../sass/fontsRule';
+
+.Navbar {
+  padding: 0.6rem 0;
+  height: 72px;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+  background-color: inherit;
+  display: flex;
+  align-items: center;
+  @include boxShadow;
+
+  &__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 0.5rem;
+
+    .menuButton {
+      color: $light;
+    }
+  }
+
+  &__logoContainer {
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.1rem;
+
+    h1 {
+      margin-left: 0.6rem;
+      font-weight: 500;
+    }
+  }
+
+  .navItems {
+    display: none;
+    align-items: center;
+
+    .navItem {
+      margin: 0 0.5rem;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+
+  .socialMedias {
+    display: flex;
+    width: fit-content;
+    button {
+      color: $secondary;
+
+      &:hover,
+      &:focus {
+        color: $primary;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: $xLarge) {
+  .Navbar {
+    padding: 1rem 0;
+    .menuButton {
+      display: none;
+    }
+
+    .navItems {
+      display: flex;
+    }
+  }
+}
